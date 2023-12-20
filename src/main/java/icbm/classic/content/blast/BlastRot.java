@@ -31,6 +31,7 @@ public class BlastRot extends BlastThreaded implements IBlastTickable
     @Override
     public void destroyBlock(BlockPos targetPosition)
     {
+        return; //TODO implement
         //get block
         final IBlockState blockState = world.getBlockState(targetPosition);
         final Block block = blockState.getBlock();
